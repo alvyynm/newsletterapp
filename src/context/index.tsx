@@ -11,7 +11,7 @@ export const AppWrapper = ({ children }: { children: React.ReactNode }) => {
   // create supabase client
   const supabase = createClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SERVICE_ROLE_KEY!
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
   );
   const [user, setUser] = useState<User | undefined>(undefined);
   const [loading, setLoading] = useState<boolean>(false);
