@@ -1,4 +1,5 @@
 import "@/app/globals.scss";
+import { AppWrapper } from "@/context";
 
 export default function RootLayout({
   children,
@@ -7,7 +8,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>hello world</body>
+      <body>
+        <AppWrapper>{children}</AppWrapper>
+      </body>
     </html>
   );
 }
