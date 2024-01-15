@@ -35,3 +35,7 @@ export type Subscriber = {
 export type User = {
   email: string;
 } & CommonFields;
+
+export type Url = {
+  shortUrl: string;
+} & CommonFields;
